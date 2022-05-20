@@ -1,2 +1,2 @@
 def testpytoolboxes():#test toolbox
-    return print("testpytoolboxes")
+    return print("import testpytoolboxes success")
