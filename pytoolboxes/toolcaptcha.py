@@ -56,10 +56,4 @@ def imgcode_local(imgpath):
 
 
 if __name__ == '__main__':
-    imgcode_local('/Users/cheng/Downloads/test.png')
-
-    # imgcode_local('/Users/cheng/Downloads/test.png')
-
-    # 输出样例：
-    # {'code': 200, 'msg': 'ok', 'data': '74689'}
-    # 74689
+    pass
