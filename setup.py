@@ -5,6 +5,7 @@ setup(name='pytoolboxes',
       classifiers=[
         'Programming Language :: Python',
         'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
     ],
       url='https://github.com/flowercoder/pytoolboxes/',
       author='flowercoder',
