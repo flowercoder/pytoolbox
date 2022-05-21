@@ -1,6 +1,6 @@
 from setuptools import setup,find_packages
 setup(name='pytoolboxes',
-      version='22.5.21',
+      version='22.5.22',
       description='private tool packages with python',
       classifiers=[
         'Programming Language :: Python',
@@ -10,6 +10,7 @@ setup(name='pytoolboxes',
       author='flowercoder',
       author_email='gas1015@gmail.com',
       license='NEU',
+      install_requires=["fake_useragent"],
       packages=find_packages(),
-      zip_safe=True
+      zip_safe=True,
      )
