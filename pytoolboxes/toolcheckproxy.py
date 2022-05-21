@@ -21,7 +21,9 @@ def checkproxy(iport):
         pattern = re.compile(r'[0-9].+')
         res = pattern.findall(step)
         test = [ip] == res
-        print(f"test{test}")
+        print(f"proxy:[{iport}]checkresult:[{test}]")
         return iport
     except:
         print("this proxy does not work!!!")
+if __name__ == '__main__':
+    checkproxy("58.246.58.150:9002")
