@@ -10,7 +10,7 @@ setup(name='pytoolboxes',
       author='flowercoder',
       author_email='gas1015@gmail.com',
       license='NEU',
-      install_requires=["fake_useragent"],
+      install_requires=["fake_useragent","corpwechatbot"],
       packages=find_packages(),
       zip_safe=True,
      )
