@@ -1,5 +1,6 @@
-from corpwechatbot import AppMsgSender
+# corpwechat send message
 
+from corpwechatbot import AppMsgSender
 
 class WorkWX():
     def appMsgSender(self, corpid,corpsecret,agentid,content):
