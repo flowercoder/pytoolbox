@@ -1,6 +1,6 @@
 from setuptools import setup,find_packages
 setup(name='pytoolboxes',
-      version='22.5.22',
+      version='22.5.27',
       description='private tool packages with python',
       classifiers=[
         'Programming Language :: Python',

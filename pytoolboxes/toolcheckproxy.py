@@ -5,6 +5,7 @@ import requests
 # check proxy by http://icanhazip.com
 def checkproxy(iport):
     try:
+        ip = iport[:iport.find(":")]
         proxy = {
           'http': f'http://{iport}',
           'https': f'https://{iport}'
@@ -14,9 +15,8 @@ def checkproxy(iport):
         head = {'User-Agent': ua.random,
                'Connection': 'keep-alive'}
         '''http://icanhazip.com会返回当前的IP地址'''
-        checkres = requests.get('http://icanhazip.com', headers=head, proxies=proxy, timeout=5)
+        checkres = requests.get('http://icanhazip.com', headers=head, proxies=proxy, timeout=3)
         # checkres = requests.get('http://icanhazip.com', headers=head, timeout=5)
-        ip = iport[:iport.find(":")]
         step = str(checkres.text)
         pattern = re.compile(r'[0-9].+')
         res = pattern.findall(step)
