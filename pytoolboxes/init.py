@@ -16,6 +16,13 @@ def renewpath(value):
     print(path_value)
     return path
 
+def readpath():
+    # path_value = str(value)
+    conf.read('./config.ini')
+    value = conf.get('FLOWERCODER','path')
+    print(value)
+    return value
+
 def operatewrite(ips):
     with open('./data.csv', 'w') as csvfile:
         fieldnames = ['id', 'address']
@@ -32,4 +39,5 @@ def testpytoolboxes():#test toolbox
     return print("import pytoolboxes success")
 
 if __name__ == '__main__':
-    renewpath('/thh')
+    renewpath('test1234567')
+    readpath()
