@@ -10,7 +10,7 @@ path = os.path.join(curpath,'config.ini')
 # conf.add_section('FLOWERCODER') # 添加一个新的section
 def renewpath(value):
     path_value = str(value)
-    conf.read('config.ini')
+    conf.read('./config.ini')
     conf.set('FLOWERCODER','path',path_value)
     conf.write(open(path,'w'))  # 保存数据
     print(path_value)
@@ -20,4 +20,4 @@ def testpytoolboxes():#test toolbox
     return print("import pytoolboxes success")
 
 if __name__ == '__main__':
-    renewpath('/thhh')
+    renewpath('/thh')
