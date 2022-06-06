@@ -18,7 +18,7 @@ def renewpath(value):
 
 def readpath():
     # path_value = str(value)
-    conf.read('./config.ini')
+    conf.read(path)
     value = conf.get('FLOWERCODER','path')
     print(value)
     return value
@@ -40,4 +40,5 @@ def testpytoolboxes():#test toolbox
 
 if __name__ == '__main__':
     renewpath('test1234567')
-    readpath()
+    # readpath()
+    # print(f'{path}')
